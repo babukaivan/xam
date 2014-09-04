@@ -47,7 +47,7 @@ $(document).ready(function(){
 //        maxTime:0 // now
 //        onChangeDateTime: logic
 //            onShow: ev_chang
-    });
+    }); 
 
     $('input[name="address"]').geocomplete({location : $('input[name="address"]').val()})
         .bind("geocode:result", function(event, result){
