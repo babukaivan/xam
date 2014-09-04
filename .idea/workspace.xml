@@ -36,6 +36,7 @@
     <file path="$PROJECT_DIR$/../copdate/module/Application/src/Application/Controller/ServicesController.php" changelist="8f8f26bd-5af3-4c14-9580-057289d3f5d9" time="1409756425395" ignored="false" />
     <file path="/ServicesController.php" changelist="8f8f26bd-5af3-4c14-9580-057289d3f5d9" time="1409756380554" ignored="false" />
     <file path="/details.php" changelist="8f8f26bd-5af3-4c14-9580-057289d3f5d9" time="1409818904234" ignored="false" />
+    <file path="/composer.json" changelist="8f8f26bd-5af3-4c14-9580-057289d3f5d9" time="1409831482562" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,10 +92,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="8" selection-start="1355" selection-end="1355" vertical-scroll-proportion="0.22711058">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="composer.json" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/composer.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="20" column="3" selection-start="426" selection-end="426" vertical-scroll-proportion="0.36719707">
               <folding />
             </state>
           </provider>
@@ -110,7 +120,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/web/js/gmaps.js" />
         <option value="$PROJECT_DIR$/assets/views/addbid.php" />
         <option value="$PROJECT_DIR$/classes/App/Model/bids.php" />
         <option value="$PROJECT_DIR$/classes/Utills.php" />
@@ -126,6 +135,7 @@
         <option value="$PROJECT_DIR$/assets/views/layout.php" />
         <option value="$PROJECT_DIR$/assets/views/details.php" />
         <option value="$PROJECT_DIR$/web/js/main.js" />
+        <option value="$PROJECT_DIR$/composer.json" />
       </list>
     </option>
   </component>
@@ -293,11 +303,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/classes/App/Model/bids.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="6" selection-end="6" vertical-scroll-proportion="0.018359853" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/phpixie/core/classes/PHPixie/Debug.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="100" column="20" selection-start="2087" selection-end="2087" vertical-scroll-proportion="0.80905753" />
@@ -378,7 +383,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="8" selection-start="1355" selection-end="1355" vertical-scroll-proportion="0.22711058">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="3" selection-start="426" selection-end="426" vertical-scroll-proportion="0.36719707">
           <folding />
         </state>
       </provider>
