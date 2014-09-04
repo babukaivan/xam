@@ -13,8 +13,19 @@ class Main extends \App\Page {
             ->group_by('t.bid_id')
             ->order_by('bids.created_at','desc')
             ->execute();
-//        $this->pixie->debug->log($bids_list->as_array());
 
+
+//        $tree=$this->pixie->orm->get('bids')->where('status',1)->find_all();
+//
+//        foreach ($tree as $ot) {            //Getting 3 fairies living in the Oak tree.
+//            $imgs = $ot->images
+//                ->find_all();
+//
+//            foreach ( $imgs as $one ) {
+//                $this->pixie->debug->log($one->img_small);
+//            }
+//
+//        }
 
         $this->view->bids_list = $bids_list;
     }
