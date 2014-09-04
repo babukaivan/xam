@@ -6,7 +6,7 @@
     <ignored path=".idea/workspace.xml" />
     <file path="/Admin.php" changelist="8f8f26bd-5af3-4c14-9580-057289d3f5d9" time="1409752849794" ignored="false" />
     <file path="/Panel.php" changelist="8f8f26bd-5af3-4c14-9580-057289d3f5d9" time="1409569852918" ignored="false" />
-    <file path="/a.dummy" changelist="8f8f26bd-5af3-4c14-9580-057289d3f5d9" time="1409643219824" ignored="false" />
+    <file path="/a.dummy" changelist="8f8f26bd-5af3-4c14-9580-057289d3f5d9" time="1409841049636" ignored="false" />
     <file path="/hello.php" changelist="8f8f26bd-5af3-4c14-9580-057289d3f5d9" time="1409818378307" ignored="false" />
     <file path="/admin_layout.php" changelist="8f8f26bd-5af3-4c14-9580-057289d3f5d9" time="1409753243444" ignored="false" />
     <file path="/layout.php" changelist="8f8f26bd-5af3-4c14-9580-057289d3f5d9" time="1409818796761" ignored="false" />
@@ -21,11 +21,11 @@
     <file path="/Password.php" changelist="8f8f26bd-5af3-4c14-9580-057289d3f5d9" time="1409639380334" ignored="false" />
     <file path="/facebook.php" changelist="8f8f26bd-5af3-4c14-9580-057289d3f5d9" time="1409583464647" ignored="false" />
     <file path="/addbid.php" changelist="8f8f26bd-5af3-4c14-9580-057289d3f5d9" time="1409665195690" ignored="false" />
-    <file path="/main.js" changelist="8f8f26bd-5af3-4c14-9580-057289d3f5d9" time="1409818973471" ignored="false" />
+    <file path="/main.js" changelist="8f8f26bd-5af3-4c14-9580-057289d3f5d9" time="1409841423732" ignored="false" />
     <file path="$PROJECT_DIR$/../copdate/cms/js/jquery.datetimepicker.js" changelist="8f8f26bd-5af3-4c14-9580-057289d3f5d9" time="1409647226954" ignored="false" />
     <file path="/jquery.datetimepicker.js" changelist="8f8f26bd-5af3-4c14-9580-057289d3f5d9" time="1409647227470" ignored="false" />
     <file path="/style.css" changelist="8f8f26bd-5af3-4c14-9580-057289d3f5d9" time="1409818571654" ignored="false" />
-    <file path="/Main.php" changelist="8f8f26bd-5af3-4c14-9580-057289d3f5d9" time="1409835363374" ignored="false" />
+    <file path="/Main.php" changelist="8f8f26bd-5af3-4c14-9580-057289d3f5d9" time="1409841360641" ignored="false" />
     <file path="/Utills.php" changelist="8f8f26bd-5af3-4c14-9580-057289d3f5d9" time="1409666676920" ignored="false" />
     <file path="/bids.php" changelist="8f8f26bd-5af3-4c14-9580-057289d3f5d9" time="1409666078111" ignored="false" />
     <file path="/bidimages.php" changelist="8f8f26bd-5af3-4c14-9580-057289d3f5d9" time="1409667090886" ignored="false" />
@@ -35,9 +35,10 @@
     <file path="/error_massages.php" changelist="8f8f26bd-5af3-4c14-9580-057289d3f5d9" time="1409748871646" ignored="false" />
     <file path="$PROJECT_DIR$/../copdate/module/Application/src/Application/Controller/ServicesController.php" changelist="8f8f26bd-5af3-4c14-9580-057289d3f5d9" time="1409756425395" ignored="false" />
     <file path="/ServicesController.php" changelist="8f8f26bd-5af3-4c14-9580-057289d3f5d9" time="1409756380554" ignored="false" />
-    <file path="/details.php" changelist="8f8f26bd-5af3-4c14-9580-057289d3f5d9" time="1409834084530" ignored="false" />
+    <file path="/details.php" changelist="8f8f26bd-5af3-4c14-9580-057289d3f5d9" time="1409841390704" ignored="false" />
     <file path="/composer.json" changelist="8f8f26bd-5af3-4c14-9580-057289d3f5d9" time="1409831482562" ignored="false" />
     <file path="/.gitignore" changelist="8f8f26bd-5af3-4c14-9580-057289d3f5d9" time="1409831596674" ignored="false" />
+    <file path="/comments.php" changelist="8f8f26bd-5af3-4c14-9580-057289d3f5d9" time="1409837120900" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,9 +61,9 @@
       <file leaf-file-name="Main.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/classes/App/Controller/Main.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="11" selection-start="948" selection-end="948" vertical-scroll-proportion="0.42416453">
+            <state line="51" column="139" selection-start="1990" selection-end="1990" vertical-scroll-proportion="0.17095116">
               <folding>
-                <marker date="1409835400000" expanded="true" signature="6082:6206" placeholder="..." />
+                <marker date="1409841956000" expanded="true" signature="7633:7757" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -71,8 +72,12 @@
       <file leaf-file-name="details.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/views/details.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="67" column="64" selection-start="2079" selection-end="2079" vertical-scroll-proportion="-9.125">
-              <folding />
+            <state line="74" column="10" selection-start="2341" selection-end="2341" vertical-scroll-proportion="-14.32">
+              <folding>
+                <marker date="1409841482000" expanded="true" signature="22:462" placeholder="..." />
+                <marker date="1409841482000" expanded="true" signature="349:462" placeholder="..." />
+                <marker date="1409841482000" expanded="true" signature="381:462" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -89,7 +94,7 @@
       <file leaf-file-name="bids.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/classes/App/Model/bids.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="24" selection-start="335" selection-end="335" vertical-scroll-proportion="-10.0">
+            <state line="16" column="24" selection-start="0" selection-end="463" vertical-scroll-proportion="-10.0">
               <folding />
             </state>
           </provider>
@@ -98,7 +103,7 @@
       <file leaf-file-name="layout.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/views/layout.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="62" selection-start="1054" selection-end="1054" vertical-scroll-proportion="0.0">
+            <state line="14" column="58" selection-start="1050" selection-end="1050" vertical-scroll-proportion="-6.25">
               <folding />
             </state>
           </provider>
@@ -116,7 +121,7 @@
       <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="89" column="33" selection-start="2923" selection-end="2923" vertical-scroll-proportion="-21.538462">
               <folding />
             </state>
           </provider>
@@ -141,7 +146,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/classes/Utills.php" />
         <option value="$PROJECT_DIR$/web/uploadifive.php" />
         <option value="$PROJECT_DIR$/classes/App/Controller/Admin.php" />
         <option value="$PROJECT_DIR$/classes/App/Admin.php" />
@@ -149,13 +153,14 @@
         <option value="$PROJECT_DIR$/assets/views/hello.php" />
         <option value="$PROJECT_DIR$/assets/views/bids_list.php" />
         <option value="$PROJECT_DIR$/web/css/style.css" />
-        <option value="$PROJECT_DIR$/assets/views/layout.php" />
-        <option value="$PROJECT_DIR$/web/js/main.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/composer.json" />
-        <option value="$PROJECT_DIR$/assets/views/details.php" />
         <option value="$PROJECT_DIR$/classes/App/Model/bidimages.php" />
         <option value="$PROJECT_DIR$/classes/App/Model/bids.php" />
+        <option value="$PROJECT_DIR$/classes/App/Model/comments.php" />
+        <option value="$PROJECT_DIR$/assets/views/layout.php" />
+        <option value="$PROJECT_DIR$/web/js/main.js" />
+        <option value="$PROJECT_DIR$/assets/views/details.php" />
         <option value="$PROJECT_DIR$/classes/App/Controller/Main.php" />
       </list>
     </option>
@@ -265,6 +270,38 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="xam" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="xam" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="xam" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="xam" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -272,7 +309,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../copdate" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../3mob" />
     <property name="FullScreen" value="false" />
   </component>
   <component name="RunManager">
@@ -378,11 +415,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/assets/views/admin_layout.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="79" selection-start="1097" selection-end="1097" vertical-scroll-proportion="0.3855569" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/classes/App/Page.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="26" column="0" selection-start="793" selection-end="1036" vertical-scroll-proportion="0.33170134">
@@ -405,13 +437,6 @@
         <state line="10" column="24" selection-start="288" selection-end="288" vertical-scroll-proportion="0.18359853" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/views/layout.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="62" selection-start="1054" selection-end="1054" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/classes/App/Controller/Admin.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="116" column="8" selection-start="4247" selection-end="4361" vertical-scroll-proportion="2.1297429" />
@@ -420,13 +445,6 @@
     <entry file="file://$PROJECT_DIR$/web/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="19" column="16" selection-start="321" selection-end="321" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -452,9 +470,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/views/details.php">
+    <entry file="file://$PROJECT_DIR$/classes/App/Model/bids.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="67" column="64" selection-start="2079" selection-end="2079" vertical-scroll-proportion="-9.125">
+        <state line="16" column="24" selection-start="0" selection-end="463" vertical-scroll-proportion="-10.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/views/layout.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="58" selection-start="1050" selection-end="1050" vertical-scroll-proportion="-6.25">
           <folding />
         </state>
       </provider>
@@ -466,18 +491,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/classes/App/Model/bids.php">
+    <entry file="file://$PROJECT_DIR$/classes/App/Model/comments.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="24" selection-start="335" selection-end="335" vertical-scroll-proportion="-10.0">
+        <state line="27" column="15" selection-start="650" selection-end="656" vertical-scroll-proportion="-16.875">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="89" column="33" selection-start="2923" selection-end="2923" vertical-scroll-proportion="-21.538462">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/views/details.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="74" column="10" selection-start="2341" selection-end="2341" vertical-scroll-proportion="-14.32">
+          <folding>
+            <marker date="1409841482000" expanded="true" signature="22:462" placeholder="..." />
+            <marker date="1409841482000" expanded="true" signature="349:462" placeholder="..." />
+            <marker date="1409841482000" expanded="true" signature="381:462" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/classes/App/Controller/Main.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="11" selection-start="948" selection-end="948" vertical-scroll-proportion="0.42416453">
+        <state line="51" column="139" selection-start="1990" selection-end="1990" vertical-scroll-proportion="0.17095116">
           <folding>
-            <marker date="1409835400000" expanded="true" signature="6082:6206" placeholder="..." />
+            <marker date="1409841956000" expanded="true" signature="7633:7757" placeholder="..." />
           </folding>
         </state>
       </provider>

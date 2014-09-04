@@ -78,6 +78,20 @@ $(document).ready(function(){
             }
         }
     });
+    $('#comment-form button[type="submit"]').click(function(e){
+        e.preventDefault();
+        var form = $('#comment-form');
+        form.ajaxSubmit({
+            beforeSubmit:function () {
+//                    $.fancybox.showLoading();
+            },
+            success:function (responce) {
+                $('.comments-list').html(responce);
+                form.resetForm();
+            }
+        });
+    });
+
     $('.img-link').click(function(e){
         e.preventDefault();
 

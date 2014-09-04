@@ -12,6 +12,7 @@
     <script type="text/javascript" src="/js/gmaps.js"></script>
     <script type="text/javascript" src="/js/jquery.uploadifive.js"></script>
     <script type="text/javascript" src="/js/jquery.bxslider.js"></script>
+    <script type="text/javascript" src="/js/jquery.form.js"></script>
     <script type="text/javascript" src="/js/jquery.fancybox.js"></script>
     <script type="text/javascript" src="/js/jquery.datetimepicker.js"></script>
     <link rel="stylesheet" href="/css/formoid.css"/>

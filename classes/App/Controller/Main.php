@@ -4,6 +4,30 @@ namespace App\Controller;
 
 class Main extends \App\Page {
 
+    public  function build_comments_tree($comments){
+        $tree = '';
+        foreach ($comments as $one_com) {
+            $tree .= '<div class="media">
+                <a class="pull-left" href="#">
+                    <img class="media-object" src="http://placehold.it/64x64" alt="">
+                </a>
+                <div class="media-body">
+                    <h4 class="media-heading">'. ( $one_com->user_id != 0  ? $one_com->author->username : 'Анонім' )
+                .'<small> '. $one_com->created_at .'</small>
+                    </h4>'.
+                $one_com->message;
+            ?>
+            <?php
+            $replies = $one_com->childs;
+            if ( (int)$replies->count_all() > 0 ) {
+                $tree .= $this->build_comments_tree($replies->find_all());
+            }
+
+            $tree .= '</div></div>';
+        }
+        return $tree;
+    }
+
     public function action_index(){
         $this->view->subview = 'hello';
         $bids_list = $this->pixie->db->query('select')->table('bids')
@@ -13,19 +37,6 @@ class Main extends \App\Page {
             ->group_by('t.bid_id')
             ->order_by('bids.created_at','desc')
             ->execute();
-
-
-//        $tree=$this->pixie->orm->get('bids')->where('status',1)->find_all();
-//
-//        foreach ($tree as $ot) {            //Getting 3 fairies living in the Oak tree.
-//            $imgs = $ot->images
-//                ->find_all();
-//
-//            foreach ( $imgs as $one ) {
-//                $this->pixie->debug->log($one->img_small);
-//            }
-//
-//        }
 
         $this->view->bids_list = $bids_list;
     }
@@ -37,7 +48,36 @@ class Main extends \App\Page {
         $this->view->bid = $bid;
         $imgs = $this->pixie->orm->get('bidimages')->where('bid_id',$bid->id)->find_all()->as_array();
 
+
+        $comments = $this->pixie->orm->get('comments')->where('parent_comment_id',0)->where('topic_id',$bid_id)->order_by('created_at','asc')->find_all();
+
+        $tree = $this->build_comments_tree($comments);
+
+        $this->view->tree = $tree;
         $this->view->imgs = $imgs;
+    }
+
+    public function action_addcommnet(){
+        $this->execute = false;
+        $auth = $this->pixie->auth;
+        $opst_data = $this->request->post();
+        $post_id = $opst_data['post_id'];
+        $message = $opst_data['message'];
+
+        $new_comment = $this->pixie->orm->get('comments');
+        $new_comment->user_id = ( $auth->user() ) ? $auth->user()->id : 0;
+        $new_comment->topic_id = $post_id;
+        $new_comment->parent_comment_id = 0;
+        $new_comment->message = $message;
+
+        $new_comment->save();
+
+        $comments = $this->pixie->orm->get('comments')->where('parent_comment_id',0)->where('topic_id',$post_id)->order_by('created_at','asc')->find_all();
+
+        $tree = $this->build_comments_tree($comments);
+
+        $this->response->body = $tree;
+
     }
 
     public function action_login() {
