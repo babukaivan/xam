@@ -37,6 +37,7 @@
     <file path="/ServicesController.php" changelist="8f8f26bd-5af3-4c14-9580-057289d3f5d9" time="1409756380554" ignored="false" />
     <file path="/details.php" changelist="8f8f26bd-5af3-4c14-9580-057289d3f5d9" time="1409818904234" ignored="false" />
     <file path="/composer.json" changelist="8f8f26bd-5af3-4c14-9580-057289d3f5d9" time="1409831482562" ignored="false" />
+    <file path="/.gitignore" changelist="8f8f26bd-5af3-4c14-9580-057289d3f5d9" time="1409831596674" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,10 +102,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="composer.json" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="composer.json" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/composer.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="1" selection-start="424" selection-end="424" vertical-scroll-proportion="0.36719707">
+            <state line="21" column="0" selection-start="425" selection-end="425" vertical-scroll-proportion="-13.125">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="7" selection-start="7" selection-end="7" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -120,7 +130,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/assets/views/addbid.php" />
         <option value="$PROJECT_DIR$/classes/App/Model/bids.php" />
         <option value="$PROJECT_DIR$/classes/Utills.php" />
         <option value="$PROJECT_DIR$/web/uploadifive.php" />
@@ -136,6 +145,7 @@
         <option value="$PROJECT_DIR$/assets/views/details.php" />
         <option value="$PROJECT_DIR$/web/js/main.js" />
         <option value="$PROJECT_DIR$/composer.json" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -303,11 +313,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/vendor/phpixie/core/classes/PHPixie/Debug.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="100" column="20" selection-start="2087" selection-end="2087" vertical-scroll-proportion="0.80905753" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/views/hello_admin.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
@@ -390,7 +395,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/composer.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="1" selection-start="424" selection-end="424" vertical-scroll-proportion="0.36719707">
+        <state line="21" column="0" selection-start="425" selection-end="425" vertical-scroll-proportion="-13.125">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="7" selection-start="7" selection-end="7" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
