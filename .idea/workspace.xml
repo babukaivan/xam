@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8f8f26bd-5af3-4c14-9580-057289d3f5d9" name="Default" comment="" />
+    <list default="true" id="8f8f26bd-5af3-4c14-9580-057289d3f5d9" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="xam.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Admin.php" changelist="8f8f26bd-5af3-4c14-9580-057289d3f5d9" time="1409752849794" ignored="false" />
@@ -30,7 +33,7 @@
     <file path="/bids.php" changelist="8f8f26bd-5af3-4c14-9580-057289d3f5d9" time="1409666078111" ignored="false" />
     <file path="/bidimages.php" changelist="8f8f26bd-5af3-4c14-9580-057289d3f5d9" time="1409667090886" ignored="false" />
     <file path="/bids_list.php" changelist="8f8f26bd-5af3-4c14-9580-057289d3f5d9" time="1409752924959" ignored="false" />
-    <file path="/Dummy.txt" changelist="8f8f26bd-5af3-4c14-9580-057289d3f5d9" time="1409756428791" ignored="false" />
+    <file path="/Dummy.txt" changelist="8f8f26bd-5af3-4c14-9580-057289d3f5d9" time="1409901505691" ignored="false" />
     <file path="$PROJECT_DIR$/../copdate/data/error_massages.php" changelist="8f8f26bd-5af3-4c14-9580-057289d3f5d9" time="1409748995136" ignored="false" />
     <file path="/error_massages.php" changelist="8f8f26bd-5af3-4c14-9580-057289d3f5d9" time="1409748871646" ignored="false" />
     <file path="$PROJECT_DIR$/../copdate/module/Application/src/Application/Controller/ServicesController.php" changelist="8f8f26bd-5af3-4c14-9580-057289d3f5d9" time="1409756425395" ignored="false" />
@@ -61,7 +64,7 @@
       <file leaf-file-name="Main.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/classes/App/Controller/Main.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="139" selection-start="1990" selection-end="1990" vertical-scroll-proportion="0.17095116">
+            <state line="51" column="139" selection-start="1990" selection-end="1990" vertical-scroll-proportion="0.018656716">
               <folding>
                 <marker date="1409841956000" expanded="true" signature="7633:7757" placeholder="..." />
               </folding>
@@ -72,7 +75,7 @@
       <file leaf-file-name="details.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/views/details.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="74" column="10" selection-start="2341" selection-end="2341" vertical-scroll-proportion="-14.32">
+            <state line="74" column="10" selection-start="2341" selection-end="2341" vertical-scroll-proportion="0.0">
               <folding>
                 <marker date="1409841482000" expanded="true" signature="22:462" placeholder="..." />
                 <marker date="1409841482000" expanded="true" signature="349:462" placeholder="..." />
@@ -85,7 +88,7 @@
       <file leaf-file-name="bidimages.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/classes/App/Model/bidimages.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="0" selection-start="135" selection-end="135" vertical-scroll-proportion="-6.25">
+            <state line="10" column="0" selection-start="135" selection-end="135" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -94,7 +97,7 @@
       <file leaf-file-name="bids.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/classes/App/Model/bids.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="24" selection-start="0" selection-end="463" vertical-scroll-proportion="-10.0">
+            <state line="16" column="24" selection-start="0" selection-end="463" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -103,7 +106,7 @@
       <file leaf-file-name="layout.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/views/layout.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="58" selection-start="1050" selection-end="1050" vertical-scroll-proportion="-6.25">
+            <state line="14" column="58" selection-start="1050" selection-end="1050" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -121,7 +124,7 @@
       <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="89" column="33" selection-start="2923" selection-end="2923" vertical-scroll-proportion="-21.538462">
+            <state line="89" column="33" selection-start="2923" selection-end="2923" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -130,7 +133,7 @@
       <file leaf-file-name="composer.json" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/composer.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="0" selection-start="425" selection-end="425" vertical-scroll-proportion="-13.125">
+            <state line="21" column="0" selection-start="425" selection-end="425" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -142,6 +145,14 @@
     <FindUsagesManager>
       <setting name="OPEN_NEW_TAB" value="false" />
     </FindUsagesManager>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitLogSettings">
+    <option name="myDateState">
+      <MyDateState />
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
@@ -172,7 +183,7 @@
     <option name="width" value="1905" />
     <option name="height" value="989" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
@@ -308,9 +319,13 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../3mob" />
+    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="FullScreen" value="false" />
+    <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -323,6 +338,23 @@
     <list size="0" />
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="sslv3">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="8f8f26bd-5af3-4c14-9580-057289d3f5d9" name="Default" comment="" />
@@ -333,13 +365,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="5" y="22" width="1905" height="989" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26304466" sideWeight="0.6708861" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2662722" sideWeight="0.6708861" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -451,63 +483,57 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="7" selection-start="7" selection-end="7" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="7" selection-start="7" selection-end="7" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/composer.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="0" selection-start="425" selection-end="425" vertical-scroll-proportion="-13.125">
+        <state line="21" column="0" selection-start="425" selection-end="425" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/classes/App/Model/bids.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="24" selection-start="0" selection-end="463" vertical-scroll-proportion="-10.0">
+        <state line="16" column="24" selection-start="0" selection-end="463" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/views/layout.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="58" selection-start="1050" selection-end="1050" vertical-scroll-proportion="-6.25">
+        <state line="14" column="58" selection-start="1050" selection-end="1050" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/classes/App/Model/bidimages.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="0" selection-start="135" selection-end="135" vertical-scroll-proportion="-6.25">
+        <state line="10" column="0" selection-start="135" selection-end="135" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/classes/App/Model/comments.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="15" selection-start="650" selection-end="656" vertical-scroll-proportion="-16.875">
-          <folding />
-        </state>
+        <state line="27" column="15" selection-start="650" selection-end="656" vertical-scroll-proportion="-16.875" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="89" column="33" selection-start="2923" selection-end="2923" vertical-scroll-proportion="-21.538462">
+        <state line="89" column="33" selection-start="2923" selection-end="2923" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/views/details.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="74" column="10" selection-start="2341" selection-end="2341" vertical-scroll-proportion="-14.32">
+        <state line="74" column="10" selection-start="2341" selection-end="2341" vertical-scroll-proportion="0.0">
           <folding>
             <marker date="1409841482000" expanded="true" signature="22:462" placeholder="..." />
             <marker date="1409841482000" expanded="true" signature="349:462" placeholder="..." />
@@ -518,7 +544,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/classes/App/Controller/Main.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="139" selection-start="1990" selection-end="1990" vertical-scroll-proportion="0.17095116">
+        <state line="51" column="139" selection-start="1990" selection-end="1990" vertical-scroll-proportion="0.018656716">
           <folding>
             <marker date="1409841956000" expanded="true" signature="7633:7757" placeholder="..." />
           </folding>
