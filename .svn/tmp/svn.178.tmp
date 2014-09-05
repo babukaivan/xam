@@ -1,0 +1,21 @@
+.well-lg img{
+    margin: 10px;
+    width: 100px !important;
+    height: 100px !important;
+}
+.well-lg table th{
+    display: none;
+    position: relative;
+}
+.well-lg table th .cls{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.uploadifive-queue{
+    display: none;
+}
+.img-list a{
+    margin: 10px;
+    float: left;
+}
