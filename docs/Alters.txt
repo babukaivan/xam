@@ -1,0 +1,1 @@
+08/09/2014 ALTER TABLE `xam`.`comments` ADD COLUMN `status` tinyint NOT NULL DEFAULT '0' AFTER `created_at`;

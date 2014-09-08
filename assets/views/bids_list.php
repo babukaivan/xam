@@ -10,6 +10,24 @@
             }
         });
 
+        $('.comm-imgs').click(function(e){
+            e.preventDefault();
+            var bid_id = $(this).data('bid_id');
+
+            $.ajax({
+                type : 'POST',
+                url : '/admin/showimages',
+                data : {
+                    bid_id : bid_id
+                },
+               success : function (res) {
+                  $('.imgss').html(res);
+                  $('.fnc').fancybox();
+                   $('.fnc').click();
+               }
+            });
+        });
+
     });
 </script>
 <div class="page-header">
@@ -32,9 +50,9 @@
                 <th>Номер авто</th>
                 <th>Адреса</th>
                 <th>Дата порушення</th>
-<!--                <th>Статус</th>-->
                 <th>Created At</th>
                 <th>Updated At</th>
+                <th>Комментарії</th>
                 <th>Блок.\Розбл.</th>
 
             </tr>
@@ -45,7 +63,7 @@
             foreach( $bids_list as $one_bid ) { ?>
                 <tr>
                     <td><?php print $i; ?></td>
-                    <td><img class="img-thumbnail" src="<?php print $one_bid->img_small; ?>" width="100" height="100" alt=""/></td>
+                    <td><a data-bid_id="<?php print $one_bid->id ?>" class="comm-imgs" href="#"><img class="img-thumbnail" src="<?php print $one_bid->img_small; ?>" width="100" height="100" alt=""/><span class="glyphicon glyphicon-camera"></span></a></td>
                     <td><?php print $one_bid->type; ?></td>
                     <td><?php print $one_bid->avto_number; ?></td>
                     <td><?php print $one_bid->address; ?></td>
@@ -53,6 +71,7 @@
 <!--                    <td>--><?php //print $one_bid->status; ?><!--</td>-->
                     <td><?php print $one_bid->created_at; ?></td>
                     <td><?php print $one_bid->updated_at; ?></td>
+                    <td><a target="_blank" href="/admin/comments/<?php print $one_bid->id ?>"><span class="glyphicon glyphicon-comment"></span>Комментарії</a></td>
                     <td>
                         <?php
                             if ( $one_bid->status == 1 ) {
@@ -76,4 +95,4 @@
         <strong>Sorry!</strong> Список пошушень поки пустий.
     </div>
 <?php }  ?>
-
+<div class="imgss" style="display: none;"></div>

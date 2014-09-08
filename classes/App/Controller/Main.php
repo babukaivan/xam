@@ -10,16 +10,18 @@ class Main extends \App\Page {
     public  function build_comments_tree($comments){
         $tree = '';
         foreach ($comments as $one_com) {
-            $tree .= '<div class="media" data-com_id='.$one_com->id.'>
+                $tree .= '<div class="media" data-com_id='.$one_com->id.'>
                 <a class="pull-left" href="#">
                     <img class="media-object" src="http://placehold.it/64x64" alt="">
                 </a>
                 <a class="reply btn btn-primary" href="#">Відповісти</a>
                 <div class="media-body">
                     <h4 class="media-heading">'. ( $one_com->user_id != 0  ? $one_com->author->username : 'Анонім' )
-                .'<small> '. $one_com->created_at .'</small>
+                    .'<small> '. $one_com->created_at .'</small>
                     </h4>'.
-                $one_com->message;
+                    ( $one_com->status == 0 ? $one_com->message : '<span style="color:red">Цей комментар заблокований!!!</span>' )
+
+
             ?>
             <?php
             $replies = $one_com->childs;
@@ -54,7 +56,7 @@ class Main extends \App\Page {
         $imgs = $this->pixie->orm->get('bidimages')->where('bid_id',$bid->id)->find_all()->as_array();
 
 
-        $comments = $this->pixie->orm->get('comments')->where('parent_comment_id',0)->where('topic_id',$bid_id)->order_by('created_at','asc')->find_all();
+        $comments = $this->pixie->orm->get('comments')->where('parent_comment_id',0)->where('topic_id',$bid_id)->where('status',0)->order_by('created_at','asc')->find_all();
 
         $tree = $this->build_comments_tree($comments);
 

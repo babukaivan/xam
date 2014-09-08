@@ -2,8 +2,10 @@
 <html>
 <head>
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="/css/jquery.fancybox.css"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" type="text/javascript"></script>
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="/js/jquery.fancybox.js"></script>
     <title>Admin Panel</title>
 </head>
 <body style="padding-top: 70px;">

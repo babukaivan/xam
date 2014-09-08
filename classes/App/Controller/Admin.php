@@ -132,4 +132,75 @@ class Admin extends \App\Admin {
         }
         $this->redirect('/admin/bids_list');
     }
+    public function action_comments(){
+        $this->view->subview = 'comment_list';
+        $bid_id = $this->request->param('id');
+        $bid = $this->pixie->orm->get('bids')->where('id',$bid_id)->find();
+        $this->view->bid = $bid;
+
+        $comments = $this->pixie->orm->get('comments')->where('parent_comment_id',0)->where('topic_id',$bid_id)->order_by('created_at','asc')->find_all();
+
+        $tree = $this->build_comments_tree($comments);
+        $this->view->tree = $tree;
+    }
+
+    public function action_blockcomment(){
+        $this->execute = false;
+        $comm_id = $this->request->param('id');
+        $comment = $this->pixie->orm->get('comments')->where('id',$comm_id)->find();
+        $comment->status = 1;
+        $comment->save();
+        $this->redirect('/admin/comments/'.$comment->topic_id);
+    }
+    public function action_unblockcomment(){
+        $this->execute = false;
+        $comm_id = $this->request->param('id');
+        $comment = $this->pixie->orm->get('comments')->where('id',$comm_id)->find();
+        $comment->status = 0;
+        $comment->save();
+        $this->redirect('/admin/comments/'.$comment->topic_id);
+    }
+
+    public function action_showimages(){
+        $this->execute = false;
+        $bid_id = $this->request->post('bid_id');
+
+        $imgs = $this->pixie->orm->get('bidimages')->where('bid_id',$bid_id)->find_all();
+        $this->execute = false;
+
+        $ret = '';
+        if ( !empty($imgs) ) {
+            foreach ( $imgs as $imm ) {
+                $ret .= '<a  rel="group" class="fnc" href="'.str_replace('big_','',$imm->img).'"><img src="'.str_replace('big_','',$imm->img).'" /></a>';
+            }
+        }
+
+        $this->response->body = $ret;
+
+    }
+
+    public  function build_comments_tree($comments){
+        $tree = '';
+        foreach ($comments as $one_com) {
+            $tree .= '<div class="media">
+                <a class="pull-left" href="#">
+                    <img class="media-object" src="http://placehold.it/64x64" alt="">
+                </a>'.
+                ( $one_com->status == 0  ? '<a style="float:right" class="reply btn btn-danger" href="/admin/blockcomment/'.$one_com->id.'">Блокувати</a>' : '<a style="float:right" class="reply btn btn-success" href="/admin/unblockcomment/'.$one_com->id.'">Розблокувати</a>' )
+                .'<div class="media-body">
+                    <h4 class="media-heading">'. ( $one_com->user_id != 0  ? $one_com->author->username : 'Анонім' )
+                .'<small> '. $one_com->created_at .'</small>
+                    </h4>'.
+                $one_com->message;
+            ?>
+            <?php
+            $replies = $one_com->childs;
+            if ( (int)$replies->count_all() > 0 ) {
+                $tree .= $this->build_comments_tree($replies->find_all());
+            }
+
+            $tree .= '</div></div>';
+        }
+        return $tree;
+    }
 }
