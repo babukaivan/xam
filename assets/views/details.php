@@ -58,13 +58,14 @@
     </div>
 
     <hr>
-    <div class="well">
-        <h4>Залиште свій коментар:</h4>
+    <h4>Залиште свій коментар:</h4>
+    <div class="well well-form">
         <form id="comment-form" role="form" method="post" action="/main/addcommnet">
             <div class="form-group">
                 <textarea name="message" class="form-control" rows="3"></textarea>
             </div>
             <input type="hidden" name="post_id" value="<?php print $bid->id ?>" />
+            <input type="hidden" name="reply_id" class="reply_id" />
             <button type="submit" class="btn btn-primary">Додати</button>
         </form>
     </div>

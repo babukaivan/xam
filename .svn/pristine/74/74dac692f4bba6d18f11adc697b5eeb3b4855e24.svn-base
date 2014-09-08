@@ -10,11 +10,10 @@ class Main extends \App\Page {
     public  function build_comments_tree($comments){
         $tree = '';
         foreach ($comments as $one_com) {
-            $tree .= '<div class="media" data-com_id='.$one_com->id.'>
+            $tree .= '<div class="media">
                 <a class="pull-left" href="#">
                     <img class="media-object" src="http://placehold.it/64x64" alt="">
                 </a>
-                <a class="reply btn btn-primary" href="#">Відповісти</a>
                 <div class="media-body">
                     <h4 class="media-heading">'. ( $one_com->user_id != 0  ? $one_com->author->username : 'Анонім' )
                 .'<small> '. $one_com->created_at .'</small>
@@ -65,16 +64,14 @@ class Main extends \App\Page {
     public function action_addcommnet(){
         $this->execute = false;
         $auth = $this->pixie->auth;
-        $post_data = $this->request->post();
-        $post_id = $post_data['post_id'];
-        $message = $post_data['message'];
-        $reply_id = (int)$post_data['reply_id'];
+        $opst_data = $this->request->post();
+        $post_id = $opst_data['post_id'];
+        $message = $opst_data['message'];
 
         $new_comment = $this->pixie->orm->get('comments');
         $new_comment->user_id = ( $auth->user() ) ? $auth->user()->id : 0;
         $new_comment->topic_id = $post_id;
-        $new_comment->parent_comment_id = $reply_id;
-        $new_comment->created_at = date("Y-m-d H:i:s",time());
+        $new_comment->parent_comment_id = 0;
         $new_comment->message = $message;
 
         $new_comment->save();

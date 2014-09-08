@@ -44,9 +44,6 @@ $(document).ready(function(){
     $('input[name="datetime"]').datetimepicker({
         format:'Y-m-d H:i',
         maxDate:0 // now
-//        maxTime:0 // now
-//        onChangeDateTime: logic
-//            onShow: ev_chang
     });
 
     $('input[name="address"]').geocomplete({location : $('input[name="address"]').val()})
@@ -78,19 +75,6 @@ $(document).ready(function(){
             }
         }
     });
-    $('#comment-form button[type="submit"]').click(function(e){
-        e.preventDefault();
-        var form = $('#comment-form');
-        form.ajaxSubmit({
-            beforeSubmit:function () {
-//                    $.fancybox.showLoading();
-            },
-            success:function (responce) {
-                $('.comments-list').html(responce);
-                form.resetForm();
-            }
-        });
-    });
 
     $('.img-link').click(function(e){
         e.preventDefault();
@@ -100,4 +84,32 @@ $(document).ready(function(){
         $('.main-img').parent().attr('href',img.attr('src').replace('mini_',''));
     });
     $('.fancy').fancybox();
+});
+
+$(document).on('click','.reply',function(e){
+    e.preventDefault();
+    var comment_id = $(this).parent().data('com_id');
+    var clone_form = $('.well-form').clone();
+    $('.well-form').html('').hide();
+    clone_form.find('.reply_id').val(comment_id);
+
+    $(this).parent().append(clone_form.html())
+});
+
+$(document).on('click','#comment-form button[type="submit"]',function(e){
+    e.preventDefault();
+    var form = $('#comment-form');
+    form.ajaxSubmit({
+        beforeSubmit:function () {
+//                    $.fancybox.showLoading();
+        },
+        success:function (responce) {
+            $('.comments-list').html(responce);
+            form.resetForm();
+            if ( !form.parent().hasClass('well-form') ) {
+                form.find('.reply_id').val(0);
+                $('.well-form').html(form).show()
+            }
+        }
+    });
 });
